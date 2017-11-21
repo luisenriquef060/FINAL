@@ -1,0 +1,50 @@
+{% load staticfiles %}
+<!--DOCTYPE HTML -->
+
+<html>
+        <head>
+            <title>
+                {% block head_title %}Examen Final{% endblock head_title %}
+            </title>
+            <!-- CSS
+              ================================================== -->
+             <link rel="stylesheet" href="{% static 'css/default.css'%}">
+            <link rel="stylesheet" href="{% static 'css/layout.css'%}">
+             <link rel="stylesheet" href="{% static 'css/media-queries.css'%}">
+             <link rel="stylesheet" href="{% static 'css/animate.css'%}">
+             <link rel="stylesheet" href="{% static 'css/prettyPhoto.css'%}">
+
+             <!-- Script
+             ================================================== -->
+            <script src="{% static 'js/modernizr.js'%}"></script>
+            <!-- Favicons
+           ================================================== -->
+           <link rel="shortcut icon" href="favicon.png" >
+
+        </head><br>
+
+        <header>
+
+           <div class="logo">
+              <a class="smoothscroll" href="#hero"><img alt="" src="images/logo.png"></a>
+           </div>
+
+           <nav id="nav-wrap">
+
+              <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show Menu</a>
+            <a class="mobile-btn" href="#" title="Hide navigation">Hide Menu</a>
+ <ul id="nav" class="nav">
+               <div class ='container'>
+               <li><a{% block content%}</a></li>
+               <li><a>{% endblock content%}</a></li>
+               </div>
+               </ul> <!-- end #nav -->
+
+        </header> <!-- Header End -->
+    <body>
+
+
+    <!-- Latest compiled and minified JavaScript -->
+    
+    </body>
+</html>
